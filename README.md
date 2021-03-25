@@ -4,6 +4,10 @@
 
 This is the Pytorch implementation for our paper [Mobile Health (mHealth) Viral Diagnostics Enabled with Adaptive Adversarial Learning](https://pubs.acs.org/doi/pdf/10.1021/acsnano.0c06807). 
 
+
+### System Overview
+<img src="figures/nn0c06807_0004.png" alt="drawing" width="600px"/>
+
 **Abstract:**
 
 >  Deep-learning (DL)-based image processing has potential to revolutionize the use of smartphones in mobile health (mHealth) diagnostics of infectious diseases. However, the high variability in cellphone image data acquisition and the common need for large amounts of specialist-annotated images for traditional DL model training may preclude generalizability of smartphone-based diagnostics. Here, we employed adversarial neural networks with conditioning to develop an easily reconfigurable virus diagnostic platform that leverages a dataset of smartphone-taken microfluidic chip photos to rapidly generate image classifiers for different target pathogens on-demand. Adversarial learning was also used to augment this real image dataset by generating 16,000 realistic synthetic microchip images, through style generative adversarial networks (StyleGAN). We used this platform, termed smartphone-based pathogen detection resource multiplier using adversarial networks (SPyDERMAN), to accurately detect different intact viruses in clinical samples and to detect viral nucleic acids through integration with CRISPR diagnostics. We evaluated the performance of the system in detecting five different virus targets using 179 patient samples. The generalizability of the system was confirmed by rapid reconfiguration to detect SARS-CoV-2 antigens in nasal swab samples (n = 62) with 100% accuracy. Overall, the SPyDERMAN system may contribute to epidemic preparedness strategies by providing a platform for smartphone-based diagnostics that can be adapted to a given emerging viral agent within days of work.
@@ -24,34 +28,32 @@ This is the Pytorch implementation for our paper [Mobile Health (mHealth) Viral 
 
 ## Framework
 
-
-#### System Overview
-<img src="figures/nn0c06807_0004.png" alt="drawing" width="600px"/>
-
-#### Microchip image database generation with StyleGAN 
+### Microchip image database generation with StyleGAN 
 <img src="figures/image--000.jpg" alt="drawing" width="600px"/>
 
-#### Dataset Library 
+### Dataset Library 
 
 <img src="figures/nn0c06807_0001.png" alt="drawing" width="600px"/>
 
-#### Standardization of the microfluidic chip-based assays to detect intact viruses and viral nucleic acids.
+### Standardization of the microfluidic chip-based assays to detect intact viruses and viral nucleic acids.
 
 <img src="figures/nn0c06807_0002.png" alt="drawing" width="600px"/>
 
-#### SPyDERMAN 
+### SPyDERMAN 
 <img src="figures/nn0c06807_0003.png" alt="drawing" width="600px"/>
 
 [comment]: <> (<img src="figures/nn0c06807_0003.png" alt="drawing" width="600px"/>)
 
-## Requirements
-```pip install requirements.txt```
+[comment]: <> (## Requirements)
 
-## Generating synthetic data library:
+[comment]: <> (```pip install requirements.txt```)
+
+## Usage
+### Generating synthetic data library:
  Run ``` python scripts/stgan.py ```
 
 
-## Adversarial training with data library and target virus:
+### Adversarial training with data library and target virus:
 
  Run ``` python scripts/train_image_.py --dset "target viral dataset location"```
 
