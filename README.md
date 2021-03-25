@@ -23,9 +23,26 @@ This is the Pytorch implementation for our paper [Mobile Health (mHealth) Viral 
 - TensorFlow 1.10.0 (For TensorBoard)
 
 ## Framework
+
+
+#### System Overview
 <img src="figures/nn0c06807_0004.png" alt="drawing" width="600px"/>
 
+#### Microchip image database generation with StyleGAN 
+<img src="figures/image--000.jpg" alt="drawing" width="600px"/>
 
+#### Dataset Library 
+
+<img src="figures/nn0c06807_0001.png" alt="drawing" width="600px"/>
+
+#### Standardization of the microfluidic chip-based assays to detect intact viruses and viral nucleic acids.
+
+<img src="figures/nn0c06807_0002.png" alt="drawing" width="600px"/>
+
+#### SPyDERMAN 
+<img src="figures/nn0c06807_0003.png" alt="drawing" width="600px"/>
+
+[comment]: <> (<img src="figures/nn0c06807_0003.png" alt="drawing" width="600px"/>)
 
 ## Requirements
 ```pip install requirements.txt```
@@ -34,9 +51,9 @@ This is the Pytorch implementation for our paper [Mobile Health (mHealth) Viral 
  Run ``` python scripts/stgan.py ```
 
 
-## Adversarial training with data library and target task:
+## Adversarial training with data library and target virus:
 
- Run ``` python scripts/train_image_.py --dset "dataset location"```
+ Run ``` python scripts/train_image_.py --dset "target viral dataset location"```
 
  example: ``` python scripts/train_image_.py --dset "COVID19"```
 
@@ -61,7 +78,7 @@ This is the Pytorch implementation for our paper [Mobile Health (mHealth) Viral 
 
 
 
- -
+ 
 ## Citing 
 Please cite our paper if you use our code in your research:
 ```
