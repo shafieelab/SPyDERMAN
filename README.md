@@ -1,3 +1,38 @@
+Design files
+
+All the designs for the 3d printed objects and laser cut objects used in the manuscript.
+
+The file "3D printing parts.f3d" contains all the 3D designs of the 3D printed parts used in the manuscript, and can be opened with Autocad Fusion 360.
+
+The file "Layer-1.ai" contains  the 2D designs of laser cutting path of the 1st layer of PMMA sheet of the microfluidic chip  used in the manuscript, and can be opened with Adobe Illustrator. 
+
+The file "Layer-2.ai" contains  the 2D designs of laser cutting path of the 2nd layer of PMMA sheet of the microfluidic chip  used in the manuscript, and can be opened with Adobe Illustrator. 
+
+The file "Layer-3.ai" contains  the 2D designs of laser cutting path of the 3rd layer of PMMA sheet of the microfluidic chip  used in the manuscript, and can be opened with Adobe Illustrator. 
+
+The file "Layer-4.ai" contains  the 2D designs of laser cutting path of the 4th layer of PMMA sheet of the microfluidic chip  used in the manuscript, and can be opened with Adobe Illustrator. 
+
+The file "Layer-5.ai" contains  the 2D designs of laser cutting path of the 5th layer of PMMA sheet of the microfluidic chip  used in the manuscript, and can be opened with Adobe Illustrator. 
+
+Requirements
+
+Autocad Fusion 360
+
+Adobe Illustrator 
+
+Microfluidic code
+
+Running codes for the microfluidic device.
+
+Requirements
+
+Arduino IDE 2.3.4 
+
+
+
+
+
+
 # SPyDERMAN
 
 # [Smartphone-based Pathogen detection resource multiplier using adversarial networks (SPyDERMAN)](https://pubs.acs.org/doi/pdf/10.1021/acsnano.0c06807)
